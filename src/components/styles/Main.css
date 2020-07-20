@@ -34,6 +34,23 @@
     font-size: 15px;
 }
 
+.contact-header {
+    font-family: "Dancing Script";
+    font-size: 43px;
+    margin-bottom: 30px;
+}
+
+.contact-details-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 0 15px;
+}
+
 .tictactoe-container {
     display: flex;
     flex-direction: row;
