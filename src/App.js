@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import TicTacToe from './components/TicTacToe';
+import Contact from './components/Contact';
+import { Switch, Route } from 'react-router-dom';
+import "./components/styles/Main.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <>
+            <div className="web-container">
+                <Navbar />
+                <div className="content-container">
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        <Route exact path="/tictactoe" component={TicTacToe} />
+                        <Route exact path="/contact" component={Contact} />
+                        <Route component={Home} />
+                    </Switch>
+                </div>
+            </div>
+        </>
+    );
+};
 
 export default App;
