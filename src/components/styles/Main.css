@@ -1,0 +1,12 @@
+.navbar-background {
+    display: flex;
+    flex-direction: row;
+    background-color: #373737;
+    justify-content: center !important;
+    height: 70px;
+}
+
+.navbar-inner {
+    display: flex;
+    justify-content: center;
+}
