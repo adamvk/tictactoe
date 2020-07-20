@@ -7,7 +7,7 @@ import "./styles/Main.css";
 class Navbar extends React.Component {
     render() {
         return (
-            <NavbarBS className="navbar-background" expand="lg" sticky="top">
+            <NavbarBS className="navbar-background" sticky="top">
                 <div className="navbar-inner">
                     <NavbarBS.Toggle aria-controls="basic-navbar-nav" />
                     <NavbarBS.Collapse id="basic-navbar-nav">
